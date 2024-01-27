@@ -5,6 +5,7 @@
 nav li {
     font-family: sans-serif;
     font-size: large;
+    padding: 2px;
 }
 
 nav a:hover {
