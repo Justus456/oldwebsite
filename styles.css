@@ -51,14 +51,3 @@ th {
 .property {
     color: #A9DAFA;
 }
-.button {
-	color: red;
-	background-color: gray;
-	border: 1px solid red;
-}
-.button:hover {
-	color: gray;
-	background-color: red;
-	border: 1px solid gray;
-	font-weight: bold;
-}
