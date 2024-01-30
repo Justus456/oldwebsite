@@ -1,0 +1,86 @@
+html {
+  font-family: Roboto, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: Poppins, sans-serif;
+  color: #014f9f;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+#topbanner {
+  background-color: #014f9f;
+  width: 100%;
+  padding: 8px;
+}
+
+#topbanner * {
+  display: inline;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.social {
+  float: right;
+  margin: 0px 20px;
+}
+
+.contact {
+  text-align: right;
+  margin: 0px 15px;
+  float: right;
+}
+
+.contact p {
+  margin: 0px 0px 0px 15px;
+}
+
+.navbanner {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+#navlogo {
+  width: 215px;
+  margin: 5px;
+}
+
+.navbanner * {
+  display: inline-block;
+  text-decoration: none;
+  font-family: Poppins, sans-serif;
+  color: #014f9f;
+}
+
+.navbanner ul {
+  float: right;
+}
+
+.navbanner li {
+  margin: 2px;
+}
+
+.hiddenmenu {
+  opacity: 0;
+}
+
+main {
+  position: relative;
+  top: 100px;
+}
