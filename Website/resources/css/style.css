@@ -16,6 +16,10 @@ header {
   top: 0px;
 }
 
+a {
+	text-decoration: none;
+}
+
 a:hover {
   font-weight: bold;
 }
@@ -23,66 +27,69 @@ a:hover {
 #topbanner {
   background-color: #014f9f;
   width: 100%;
-  padding: 8px;
+	height: 50px;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	z-index: 100;
+}
+#topbanner a {
+	color: #ffffff;
 }
 
-#topbanner * {
-  display: inline;
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.icon {
-  width: 20px;
-  height: 20px;
-}
-
-.social {
-  float: right;
-  margin: 0px 20px;
+.rates {
+	margin: 0px 10px;
 }
 
 .contact {
-  text-align: right;
-  margin: 0px 15px;
-  float: right;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0px 5px;
 }
 
-.contact p {
-  margin: 0px 0px 0px 15px;
+.contact h5 {
+	margin: 5px;
+	font-weight: normal;
+	font-size: 1.1em;
+}
+
+.social {
+	margin: 10px;
+	display: inline-flex;
+	align-items: center;
+}
+
+.icon {
+	max-height: 35px;
+	margin: 0px 2px;
 }
 
 .navbanner {
-  background-color: rgba(255, 255, 255, 0.85);
-  width: 100%;
+	position: fixed;
+	top: 50px;
+	height: 100px;
+	width: 100%;
+	background-color: #ffffff;
+	opacity: 0.85;
+	z-index: 100;
+	display: flex;
+}
+
+.navlist {
+	list-style: none;
+	color: #014f9f;
 }
 
 #navlogo {
-  width: 215px;
-  margin: 5px;
-}
-
-.navbanner * {
-  display: inline-block;
-  text-decoration: none;
-  font-family: Poppins, sans-serif;
-  color: #014f9f;
-}
-
-.navbanner ul {
-  float: right;
-}
-
-.navlist li {
-	font-size: 18px;
-	text-align: center;
-}
-
-.hiddenmenu {
-  opacity: 0;
+	height: 95px;
 }
 
 main {
-  position: relative;
-  top: 100px;
+	position: relative;
+	top: 150px;
+}
+
+.hiddenmenu {
+	display: none;
 }
