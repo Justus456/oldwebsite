@@ -1,134 +1,118 @@
-html {
-	font-family: Roboto, sans-serif;
+/* Global */
+
+body {
+    font-family: Roboto, "Century Gothic", sans-serif;
 }
 
 h1,
 h2,
-h3,
-h4 {
-	font-family: Poppins, sans-serif;
-	color: #014f9f;
-}
-
-header {
-	position: fixed;
-	width: 100%;
-	top: 0px;
+h3 {
+    font-family: Poppins, "Lucida Grande", sans-serif;
 }
 
 a {
-	text-decoration: none;
+    text-decoration: none;
 }
 
-a:hover {
-	font-weight: bold;
+/* Fixed Top Navbar */
+
+#header {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    overflow: hidden;
 }
+
+/* Upper Banner */
 
 #topbanner {
-	background-color: #014f9f;
-	width: 100%;
-	height: 50px;
-	color: white;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	z-index: 100;
+    height: 40px;
+    color: white;
+    background-color: #014f9f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#toplinks {
+    display: flex;
+    align-items: center;
 }
 
 #topbanner a {
-	color: #ffffff;
+    color: white;
 }
 
-.rates {
-	margin: 0px 10px;
+#social img {
+    height: 25px;
 }
 
-.contact {
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	margin: 0px 5px;
+#topbanner p {
+    margin: 15px;
+    width: 370px;
 }
 
-.contact h5 {
-	margin: 5px;
-	font-weight: normal;
-	font-size: 1.1em;
+#topbanner .container {
+    margin: 15px;
 }
 
-.social {
-	margin: 10px;
-	display: inline-flex;
-	align-items: center;
+#contactbar a {
+    margin: 5px;
 }
 
-.icon {
-	max-height: 30px;
-	margin: 2px;
+#contactbar a+a::before {
+    content: "| ";
+    margin-right: 5px;
 }
 
-.social a:hover {
-	background-color: #39b54a;
+#contactbar a:hover {
+    font-weight: bolder;
 }
 
-.navbanner {
-	position: fixed;
-	top: 50px;
-	height: 100px;
-	width: 100%;
-	background-color: #ffffff;
-	opacity: 0.85;
-	z-index: 100;
-	display: flex;
-	align-items: center;
-	text-align: center;
-	justify-content: space-between;
+#mainbanner {
+    background-color: white;
+    opacity: 0.9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #014f9f;
+    height: 85px;
 }
 
-.navlist {
-	list-style: none;
-	color: #014f9f;
-	display: inline-flex;
-	justify-content: space-between;
-	align-items: center;
-	margin: 10px;
+#logo {
+    height: 75px;
+    margin: 0px 5px 0px 15px;
 }
 
-.navlist li {
-	margin: 8px;
+#mainbanner a {
+    color: #014f9f;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0px 10px;
 }
 
-.navlist a {
-	color: #014f9f;
-	font-weight: 600;
+#mainbanner a:hover {
+    color: #39b54a;
 }
 
-.navlist a:hover {
-	color: #39b54a;
+#mainbanner button:hover {
+    background-color: #39b54a;
 }
 
-#navlogo {
-	height: 75px;
+#mainbanner button {
+    color: white;
+    background-color: #014f9f;
+    height: 40px;
+    width: 120px;
+    font-family: Poppins, "Lucida Grand", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 20px;
+    margin: 0px 20px;
+    cursor: pointer;
 }
 
-main {
-	position: relative;
-	top: 150px;
-}
-
-.hiddenmenu {
-	display: none;
-}
-
-#startbutton {
-	background-color: #014f9f;
-	border-radius: 10px;
-	width: 125px;
-	height: 45px;
-	display: grid;
-	align-content: center;
-}
-
-#startbutton a {
-	color: #ffffff;
+#mainbanner button:active {
+    background-color: #309A3F;
 }
