@@ -1,5 +1,20 @@
 /* Global */
 
+html,
+header,
+main,
+footer,
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+html {
+    margin: 0px;
+}
+
 body {
     font-family: Roboto, "Century Gothic", sans-serif;
 }
@@ -20,7 +35,8 @@ a {
     position: fixed;
     width: 100%;
     top: 0px;
-    overflow: hidden;
+    overflow: visible;
+    box-shadow: 0px -4px 10px #014f9f;
 }
 
 /* Upper Banner */
@@ -43,18 +59,21 @@ a {
     color: white;
 }
 
-#social img {
-    height: 25px;
-}
-
 #topbanner p {
     margin: 15px;
     width: 370px;
 }
 
+#topbanner em {
+    color: #39b54a;
+    font-weight: bolder;
+}
+
 #topbanner .container {
     margin: 15px;
 }
+
+/* Contact Links */
 
 #contactbar a {
     margin: 5px;
@@ -69,26 +88,44 @@ a {
     font-weight: bolder;
 }
 
+
+/* Social Media Icons */
+
+#social svg {
+    height: 25px;
+    margin: 0px 6px;
+    padding-top: 3px;
+}
+
+#social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#social a:hover {
+    border: 1px solid #39b54a;
+}
+
+/* Main Nav Banner */
+
 #mainbanner {
-    background-color: white;
-    opacity: 0.9;
+    background-color: rgb(255, 255, 255, 0.9);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #014f9f;
+    box-shadow: 5px, 0px, 3px, #014f9f;
     height: 85px;
-}
-
-#logo {
-    height: 75px;
-    margin: 0px 5px 0px 15px;
 }
 
 #mainbanner a {
     color: #014f9f;
-    font-size: 24px;
-    font-weight: 500;
     margin: 0px 10px;
+}
+
+#logo {
+    height: 70px;
+    margin: 5px 5px 0px 15px;
 }
 
 #mainbanner a:hover {
@@ -103,9 +140,10 @@ a {
     color: white;
     background-color: #014f9f;
     height: 40px;
-    width: 120px;
+    width: 140px;
     font-family: Poppins, "Lucida Grand", sans-serif;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 500;
     text-transform: uppercase;
     border: none;
     border-radius: 20px;
@@ -115,4 +153,74 @@ a {
 
 #mainbanner button:active {
     background-color: #309A3F;
+}
+
+#navmain {
+    display: flex;
+    text-transform: uppercase;
+}
+
+.dropdown {
+    position: relative;
+    display: block;
+}
+
+.dropdownlink {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.dropdownmenu {
+    list-style: none;
+    margin: 2px 0px;
+    padding: 2px;
+    display: block;
+    width: 315px;
+    background-color: white;
+    opacity: 1;
+    position: absolute;
+    text-align: left;
+    text-transform: none;
+    border-left: 1px solid #014f9f;
+    visibility: hidden;
+    z-index: 52;
+}
+
+.dropdownmenu a {
+    font-size: 16px;
+}
+
+.dropdownlink:hover+.dropdownmenu,
+.dropdownmenu:hover,
+.dropdownlink:focus+.dropdownmenu,
+.dropdownmenu:focus {
+    visibility: visible;
+    display: block;
+}
+
+#chicagolist {
+    font-family: Big-Shoulders-Text, serif;
+    text-decoration: underline;
+    color: #E4002B;
+}
+
+#blog {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#blog:hover {
+    border: 1px solid #39b54a;
+    border-radius: 5px;
+}
+
+#connect {
+    font-weight: bolder;
+    border: 2px solid #014f9f;
+    width: 235px;
+}
+
+main {
+    position: relative;
+    top: 130px;
 }
