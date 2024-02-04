@@ -257,6 +257,10 @@ a {
     align-items: center;
 }
 
+.apply:hover, .apply:focus {
+    background-color: #004283;
+}
+
 /* Main Content */
 
 main {
