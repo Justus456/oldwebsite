@@ -214,6 +214,7 @@ a {
     font-family: Big-Shoulders-Text, serif;
     text-decoration: underline;
     color: #E4002B;
+    cursor: default;
 }
 
 #blog {
