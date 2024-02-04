@@ -9,6 +9,7 @@ body {
     padding: 0;
     border: 0;
     vertical-align: baseline;
+    box-sizing: border-box;
 }
 
 html {
@@ -23,6 +24,8 @@ h1,
 h2,
 h3 {
     font-family: Poppins, "Lucida Grande", sans-serif;
+    color: #014f9f;
+    text-align: left;
 }
 
 a {
@@ -33,6 +36,7 @@ a {
 
 #header {
     position: fixed;
+    z-index: 500;
     width: 100%;
     top: 0px;
     overflow: visible;
@@ -62,6 +66,7 @@ a {
 #topbanner p {
     margin: 15px;
     width: 370px;
+    overflow: hidden;
 }
 
 #topbanner em {
@@ -71,6 +76,7 @@ a {
 
 #topbanner .container {
     margin: 15px;
+    overflow: hidden;
 }
 
 /* Contact Links */
@@ -198,6 +204,12 @@ a {
     display: block;
 }
 
+#connect {
+    font-weight: bolder;
+    border: 2px solid #014f9f;
+    width: 235px;
+}
+
 #chicagolist {
     font-family: Big-Shoulders-Text, serif;
     text-decoration: underline;
@@ -214,13 +226,125 @@ a {
     border-radius: 5px;
 }
 
-#connect {
-    font-weight: bolder;
-    border: 2px solid #014f9f;
-    width: 235px;
+/* Page Navigation */
+
+#pagenav {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    background-color: #39b54a;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
+
+#pagenav a {
+    color: white;
+    text-decoration: underline;
+    font-style: bolder;
+    font-size: 16px;
+    margin: 0px 5px;
+}
+
+.apply {
+    width: 65px;
+    height: 35px;
+    color: #ffffff;
+    background-color: #014f9f;
+    text-align: center;
+    display: grid;
+    align-items: center;
+}
+
+/* Main Content */
 
 main {
     position: relative;
-    top: 130px;
+    top: 175px;
+    padding: 0px 10px;
+    display: grid;
+    justify-items: center;
+    z-index: 2;
+}
+
+main div {
+    margin: 10px 0px;
+}
+
+.divider {
+    width: 90%;
+    height: 7px;
+    background-color: #014f9f;
+}
+
+#about {
+    width: 90%;
+}
+
+.chicagoheader h5 {
+    font-family: Big-Shoulders-Text, serif;
+    color: #E4002B;
+    font-size: 18px;
+    text-align: left;
+    min-width: fit-content;
+}
+
+.info {
+    display: flex;
+    background: linear-gradient(90deg, #ffffff, #014f9f);
+    justify-content: space-between;
+    text-align: left;
+    align-items: center;
+    padding: 20px;
+}
+
+.info p {
+    min-width: 150px;
+    max-width: 500px;
+    margin: 15px;
+}
+
+.info img {
+    max-height: 175px;
+    margin: 5px;
+}
+
+#eligibility {
+    max-width: 95%;
+    background-color: #39b54a;
+    padding: 20px;
+}
+
+#eligibility div {
+    background-color: #ffffff;
+    padding: 3px 7px;
+}
+
+.ineligible h2 {
+    width: fit-content;
+    border: 2px solid #E4002B;
+}
+
+#schedule {
+    width: 85%;
+}
+
+.monthcontainer {
+    text-align: left;
+    border: 3px solid #39b54a;
+    padding: 0px 3px;
+    width: 235px;
+    height: 240px;
+    margin: 0px 7px;
+    display: inline-block;
+}
+
+.monthcontainer h4 {
+    text-transform: uppercase;
+    color: white;
+    background-color: #014f9f;
+    border-top: 1px solid #39b54a;
+    border-bottom: 1px solid #39b54a;
+    padding: 1px 3px;
 }
