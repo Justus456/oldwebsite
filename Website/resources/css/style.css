@@ -20,12 +20,38 @@ body {
     font-family: Roboto, "Century Gothic", sans-serif;
 }
 
+div {
+    font-size: 0;
+}
+
 h1,
 h2,
 h3 {
     font-family: Poppins, "Lucida Grande", sans-serif;
     color: #014f9f;
     text-align: left;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+ol {
+    font-size: 16px;
 }
 
 a {
@@ -181,7 +207,7 @@ a {
     margin: 2px 0px;
     padding: 2px;
     display: block;
-    width: 315px;
+    width: fit-content;
     background-color: white;
     opacity: 1;
     position: absolute;
@@ -215,6 +241,7 @@ a {
     text-decoration: underline;
     color: #E4002B;
     cursor: default;
+    list-style: none;
 }
 
 #blog {
@@ -258,7 +285,8 @@ a {
     align-items: center;
 }
 
-.apply:hover, .apply:focus {
+.apply:hover,
+.apply:focus {
     background-color: #004283;
 }
 
@@ -271,6 +299,7 @@ main {
     display: grid;
     justify-items: center;
     z-index: 2;
+    box-shadow: 0px -4px 10px #014f9f;
 }
 
 main div {
@@ -282,6 +311,8 @@ main div {
     height: 7px;
     background-color: #014f9f;
 }
+
+/* About Section */
 
 #about {
     width: 90%;
@@ -333,16 +364,18 @@ main div {
 
 #schedule {
     width: 85%;
+    vertical-align: top;
 }
 
 .monthcontainer {
     text-align: left;
     border: 3px solid #39b54a;
     padding: 0px 3px;
-    width: 235px;
-    height: 240px;
+    width: 220px;
+    height: 230px;
     margin: 0px 7px;
     display: inline-block;
+    vertical-align: top;
 }
 
 .monthcontainer h4 {
@@ -352,4 +385,127 @@ main div {
     border-top: 1px solid #39b54a;
     border-bottom: 1px solid #39b54a;
     padding: 1px 3px;
+}
+
+/* Stories Section */
+
+#stories {
+    background: linear-gradient(#39b54a, #ffffff);
+    width: 95%;
+    padding: 0px 15px;
+}
+
+#stories h2 {
+    background-color: #ffffff;
+    text-align: left;
+    width: fit-content;
+}
+
+/* Resources Section */
+
+#resources {
+    width: 95%;
+}
+
+.resourcecontainer {
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    height: 300px;
+    margin: 15px;
+    padding: 7px;
+    box-shadow: 0px 0px 10px 1px #014f9f;
+    border-radius: 5px;
+}
+
+#resources h2 {
+    text-align: center;
+    justify-self: center;
+}
+
+.resourcecontainer img {
+    max-width: 250px;
+}
+
+.resourcecontainer p {
+    color: #000000;
+}
+
+/* Team Section */
+
+#team {
+    width: 95%;
+}
+
+.teamcontent {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    background-color: #014f9f;
+    padding: 0px 20px;
+}
+
+.teamcontainer {
+    width: 250px;
+    background-color: #ffffff;
+    padding: 3px;
+    margin: 15px;
+}
+
+.teamcontainer img {
+    height: 120px;
+    margin: 2px;
+}
+
+/* Application Section */
+
+.applicationcontainer {
+    background: linear-gradient(#014f9f, #ffffff);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Footer */
+
+footer {
+    position: relative;
+    top: 176px;
+    width: 100%;
+    background-color: #014f9f;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.footercontainer {
+    color: #ffffff;
+    margin: 0px 10px;
+}
+
+.footercontainer a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footercontainer + .footercontainer::before {
+    content: " | ";
+}
+
+#footernav {
+    display: inline-flex;
+}
+#footernav div {
+    margin: 2px;
+}
+
+#footernav a {
+    font-size: 12px;
+}
+
+#footernav ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    text-indent: 3px;
 }
