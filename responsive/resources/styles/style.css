@@ -3,7 +3,8 @@ html {
     color: #331e10;
 }
 
-html, header, footer {
+header,
+footer {
     width: 100%;
 }
 
@@ -79,7 +80,9 @@ h2 {
     }
 
     .mobile {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .mobile .logo {
@@ -115,6 +118,20 @@ h3 {
     max-height: 400px;
 }
 
+@media only screen and (max-width: 480px) {
+    .current {
+        display: block;
+        border: none;
+    }
+
+    .current h4,
+    .current p {
+        color: #ffebd6;
+        background-color: #331e10;
+        margin: 0px;
+    }
+}
+
 /* Images */
 
 .image {
@@ -134,6 +151,7 @@ h3 {
         display: block;
         margin: 0px;
         padding: 0px;
+        width: 100%;
     }
 
     img {
