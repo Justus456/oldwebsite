@@ -4,6 +4,12 @@ html {
 	color: #FFFFFF;
 }
 
+a {
+    background-color: #1F1F1F;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
 body {
     text-align: center;
 }
@@ -15,7 +21,7 @@ table {
 
 h2 {
 	color: #FF7575;
-	font-size: 1.75em;
+	font-size: 1.75rem;
 	border-bottom: 3px solid;
 	padding: 4px;
 	margin: auto
@@ -23,6 +29,7 @@ h2 {
 
 td {
 	border-top: 1px solid #007511;
+	font-size: 0.9rem;
 }
 
 th {
@@ -30,12 +37,12 @@ th {
 }
 
 .subhead {
-	font-size: 1.3em;
+	font-size: 1.3rem;
 	background-color: #151516;
 	color: #FFFFFF;
 }
 
-.tag, .selector, .property {
+.tag, .selector, .property, .operator, .object, .statement {
     font-family: monospace;
     background-color: #1F1F1F;
 }
@@ -50,4 +57,18 @@ th {
 
 .property {
     color: #A9DAFA;
+}
+
+.object {
+	color: #6FBFF9;
+}
+
+.statement {
+	color: #6698CE;
+}
+
+.command {
+	font-family: monospace;
+	color: #FFFFFF;
+	background-color: #000000;
 }
